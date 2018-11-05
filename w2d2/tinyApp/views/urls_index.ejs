@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>TinyApp</title>
+  <% include partials/_header %>
+</head>
+
+<body>
+  <form method="POST">
+    <table style="width:500px;border: 1px solid black">
+      <tr>
+        <th>Short</th>
+        <th>Looong</th>
+      </tr>
+
+      <% for (let entry of Object.entries(urls)) { %>
+      <tr>
+
+        <td> <a href="/urls/<%= entry[0] %>"><%= entry[0] %></a></td>
+        <td> <%= entry[1].longURL %> </td>
+        <td> <button formmethod="GET" formaction=/urls/<%= entry[0] %>>Edit </button> </td>
+        <td> <button formaction=/urls/<%= entry[0]%>/delete> Delete </button> </td>
+      </tr>
+      <% } %>
+      
+    </form>
+    <a href="/urls/new">Make New Short URL</a>
+</body>
+
+</html>

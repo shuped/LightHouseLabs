@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+   </head>
+   <body>
+     <h1>Thank you fr ordering!</h1>
+     <h4>   -Jungle</h4>
+     <p>
+       Here are your order details:
+     </p>
+       <% @lineitems.each do |item| %>
+         <p> Product Name: <%= item.product.name %> </p>
+         <p> Quantity: <%= item.quantity %> </p>
+         <p> Item Price: <%= number_to_currency(item.item_price_cents) %> </p>
+         <p> Total: <%= number_to_currency(item.total_price_cents) %> </p>
+       <% end %>
+     <p>
+       Grand Total: <%= number_to_currency(@lineitems.sum(:total_price_cents)/100) %>
+     </p>
+
+     <p>Have a great day!</p>
+   </body>
+ </html>

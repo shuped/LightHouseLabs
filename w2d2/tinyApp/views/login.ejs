@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>TinyApp</title>
+      <% include partials/_header %>
+  </head>
+  <body>
+    <form action="/login" method="POST">
+      <fieldset>
+        <legend>Login to the site</legend>
+        <label for="username">Email: </label>
+        <input type="text"  name="username" id="username" value="user@example.com" placeholder="Enter your username..." /><br />
+        <label for="password">Password: </label>
+        <input type="password" name="password" id="password" value="purple-monkey-dinosaur" placeholder="Enter your password..." /><br />
+        <button type="submit">Login</button>
+      </fieldset>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Schooodle Poll</title>
+  <% include partials/_head.ejs %>˝
+  <script type="text/javascript" src="/scripts/app.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.10.0/js/md5.js"></script>
+</head>
+
+<body>
+  <% include partials/_nav_bar.ejs %>
+  <main>
+    <div class="row col-12">
+      <div class="col-1"></div>
+      <div class="aLittleBitDown aLittleBitUpFromBottom andWeWantedBlue weWantItRounded col-10">
+        <header data-super_secret_URL="<%= super_secret_URL %>">
+          <h1>Hello Pollers!</h1>
+        </header>
+        <div class="card border-info mb-3">
+          <div class="card-header">
+            <%= title %>
+          </div>
+          <div class="card-body text-info">
+            <p class="card-subtitle mb-2">
+              Event location:
+              <%= place %>
+            </p>
+            <p class="card-text">
+              Event note:
+              <%= note %>
+            </p>
+            <p class="card-text font-weight-bold">
+              Share this URL with your friends!
+              <span id="baseURL"></span><%= super_secret_URL %>
+            </p>
+            <a href="/poll/<%= super_secret_URL %>" class="card-link">Follow link</a>
+          </div>
+        </div>
+
+        <label for="organizer_name">Name</label>
+        <input class="form-control form-control-m" id="organizer_name" type="text" name="username" value="<%= organizer_name %>">
+        <label for="organizer_email">Email</label>
+        <input class="form-control form-control-m" id="organizer_email" type="text" name="email" value="<%= organizer_email %>">
+
+        <section data-event_id="<%= event_id %>">
+
+          <form id="voteForm" action="/vote" method="POST">
+            <input type="hidden" id="<%= event_id %>" name="event_id" value="<%= event_id %>">
+            <div class=" btnShouldBeCenterAndALittleBitUp">
+              <input class="btn btn-primary" id="voteButton" type="submit" value="Vote">
+            </div>
+          </form>
+        </section>
+      </div>
+      <div class="col-1"></div>
+    </div>
+    <div class="row col-12">
+      <div class="col-12"></div>
+    </div>
+  </main>
+
+
+</html>

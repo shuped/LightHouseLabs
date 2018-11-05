@@ -1,0 +1,23 @@
+{
+  "name": "psqljs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test_script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shuped/psql_javascript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shuped/psql_javascript/issues"
+  },
+  "homepage": "https://github.com/shuped/psql_javascript#readme",
+  "dependencies": {
+    "knex": "^0.15.2",
+    "pg": "^7.4.3"
+  }
+}

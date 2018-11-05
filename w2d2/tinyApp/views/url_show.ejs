@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <% include partials/_header %>
+</head>
+
+<body>
+  <form method="POST">
+  <table style="width:500px;border: 1px solid black">
+    <tr>
+      <th>Short</th>
+      <th>Looong</th>
+    </tr>
+
+    <tr>
+      <td> <%= id %> </td>
+      <td> <%= urls[id].longURL %> </td>
+      <td><input id="longURL" type="text" name="longURL" placeholder="Edit long URL..." style="width: 300px"></td>
+      <td><input type="submit" value="Submit"></td>
+      <!-- <input type="hidden" name="shortURL" value=<%= id %>> -->
+    </tr>
+  </form>
+  <a href="/urls">All My Urls</a>
+</body>
+<script>
+
+</script>
+
+</html>

@@ -1,0 +1,42 @@
+h2 {
+  margin: 0 1em 0 1em;
+}
+
+.compose-rule {
+  margin: 0 0.5em 1em 0.5em;
+}
+
+form {
+  background-color: #eee;
+  margin: 0 2em;
+  border-color: #eeeeee;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 2px;
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.5);
+  padding: 0.1em;
+}
+
+
+
+textarea {
+  width: 100%;
+  padding: 0.5em;
+  margin: 1em auto 1em auto;
+}
+
+input {
+  margin: 1em;
+}
+
+span.counter {
+  color: #00a087;
+  float: right;
+  line-height: 35px;
+  margin: 1em;
+
+}
+
+.text-red {
+  color: red;
+}

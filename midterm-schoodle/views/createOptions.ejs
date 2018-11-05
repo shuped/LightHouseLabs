@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Schooodle Create Options</title>
+  <% include partials/_head.ejs %>
+  <link rel="stylesheet" href="/vendor/jquery.datetimepicker.min.css" type="text/css" />
+  <script type="text/javascript" src="/vendor/jquery.datetimepicker.full.js"></script>
+  <script type="text/javascript" src="/scripts/calendarApp.js"></script>
+</head>
+
+<body>
+  <% include partials/_nav_bar.ejs %>
+  <main class="">
+    <div class="row col-12">
+      <div class="col-1"></div>
+      <div class="aLittleBitDown weWantItRounded andWeWantedBlue col-10">
+        <h1>What are the options?</h1>
+        <div id='input_fields_container'>
+          <div>
+          <label for="input_option_1">Date & Time Option 1</label>
+          <input class="form-control form-control-m" type="text" id="input_option_1" name="option_1" autocomplete="off"><br>
+          </div>
+          <div>
+          <label for="input_option_2">Date & Time Option 2</label>
+          <input class="form-control form-control-m" type="text" id="input_option_2" name="option_2" autocomplete="off"><br>
+        </div>
+        </div>
+        <span>
+          <button id="remove_option" class="btn btn-primary"> - </button>
+          <button id="add_option" class="btn btn-primary"> + </button>
+        </span>
+        <div class="btnShouldBeCenterAndALittleBitUp">
+          <button id="submit" class="btn btn-primary" type="submit">Continue</button>
+        </div>
+      </div>
+      <div class="col-1"></div>
+    </div>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Information -->
+    <title>Tweeter - Home Page</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,700,700i" rel="stylesheet">
+
+    <!-- App CSS -->
+    <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
+
+    <!-- External JS -->
+    <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="/vendor/moment.js"></script>
+
+    
+    <!-- App JS -->
+    <script type="text/javascript" src="/scripts/app.js"></script>
+    
+
+  </head>
+
+  <body>
+    <!-- Top nav bar (fixed) -->
+    <nav id="nav-bar" class="nav">
+      <img class="logo" src="/images/bird.png">
+      <span class="header">Tweeter</span>
+      <button id="composer-button" class="float-right compose">Compose!</button>
+    </nav>
+
+    <!-- Page-specific (main) content here -->
+    <main class="container">
+        <section>
+          <form id="submit-form" action='/tweets' method='POST' enctype="application/x-www-form-urlencoded">
+            <h2>Compose Tweet</h2>
+            <hr class="compose-rule">
+            <textarea id="composer" name="text" placeholder="What are you humming about?"></textarea>
+            <span class="invalid-tweet-error error-text center-inline"></span>
+            <input type="submit" value="Tweet">
+            <span class="counter">140</span>
+          </form>
+        </section>
+        <section class="tweets">
+            <article class="tweet-article">
+                <header class="tweet-header group faded">
+                  <img class="tweet-img float-left" src="https://vanillicon.com/7b89b0d8280b93e2ba68841436c0bebc_50.png">
+                  <h3 class="tweet-name float-left">Name</h3>
+                  <p class=" tweet-username float-right">@username</p>
+                </header>
+                <p class="tweet-body">
+                  tweet content
+                </p>
+                <hr class="tweet-rule">
+                <footer class="tweet-footer group">
+                  <p class="footer-text float-left">Dawn of time</p>
+                  <span class="footer-img float-right">
+                    <img class="footer-img" src="./images/flag-tweet.png">
+                    <img class="footer-img" src="./images/retweet.png">
+                    <img class="footer-img" src="./images/heart-tweet.js.png">
+                  </span>
+                </footer>
+              </article>
+        </section>
+    </main>
+
+  </body>
+</html>

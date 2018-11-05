@@ -1,0 +1,17 @@
+<% if(user === undefined) { %>
+  <!-- <form action="/login" method="POST">
+    <input name="username" placeholder="username...">
+    <input type="submit"> -->
+    <a href="/login">Login</a>
+    <a href="/register">Register</a>
+  <!-- </form> -->
+<% } else { %>
+  <form action="/logout">
+    <%= user.email %>
+    <input type="submit" value="Log Out" name="out">
+  </form>
+<% } %>
+  <header>
+    <title>TinyApp</title>
+    <h2>Responsive, Mobile-First UI coming soon</h2>
+  </header>

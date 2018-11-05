@@ -1,0 +1,73 @@
+.review-container { /* <div> */
+
+  position: relative;
+  padding: 0px;
+
+  padding-left: 100px;
+ }
+
+ .review-list { /* <ul> */
+
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+ }
+
+ .review-list__item { /* <li> */
+
+  list-style: none;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  margin: 10px 0px 0px;
+  border: 1px solid black;
+  border-radius: 5px;
+ }
+
+     .review-list__item:first-child { /* <li> */
+      margin-top: 0px;
+     }
+
+     .review-list__item span { /* <span> */
+
+       display: block;
+     }
+
+     .review-list__item__header, .review-list__item--body { /* <header> */
+       position: relative;
+       width: 100%;
+       height: 40px;
+       border-bottom: 1px solid black;
+     }
+
+     .review-list__item--username { /* <span> */
+       position: absolute;
+         top: 0px;
+         left: 10px;
+       display: initial !important;
+       width: initial !important;
+       margin: 0px !important;
+       line-height: 40px;
+     }
+
+     .review-list__item--rating { /* <span> */
+       position: absolute;
+         top: 0px;
+         right: 10px;
+       display: initial !important;
+       width: initial !important;
+       margin: 0px !important;
+       line-height: 40px;
+     }
+
+     .review-list__item--body { /* <div> */
+       height: initial;
+       min-height: 80px;
+       text-align: left;
+       padding: 10px
+     }
+     .review-list__item--description { /* <span> */
+       margin: 0px !important;
+     } 

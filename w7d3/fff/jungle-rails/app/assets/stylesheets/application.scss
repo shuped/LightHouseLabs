@@ -1,0 +1,16 @@
+// Vendor
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome";
+
+// App
+@import "products";
+@import "./reviews";
+
+// Global
+body {
+  padding-top: 70px;
+}
+// .show {
+//   display: block !important;
+// }

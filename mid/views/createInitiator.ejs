@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Schooodle Create Initiator</title>
+  <% include partials/_head.ejs %>˝
+</head>
+
+<body>
+  <% include partials/_nav_bar.ejs %>
+  <main class="">
+    <div class="row col-12">
+      <div class="col-1"></div>
+      <div class="aLittleBitDown andWeWantedBlue weWantItRounded col-10">
+        <h1>Provide us your name and email</h1>
+        <form class="" action="/poll" method="POST">
+          <label for="input_name">Name</label>
+          <input class="form-control form-control-m " type="text" id="input_name" name="name"><br>
+          <label for="input_email">Email</label>
+          <input class="form-control form-control-m " type="text" id="input_email" name="email"><br>
+          <div class="btnShouldBeCenterAndALittleBitUp">
+            <input class="btn btn-primary" type="submit" value="Create Schooodle Poll">
+          </div>
+        </form>
+      </div>
+      <div class="col-1"></div>
+    </div>
+  </main>
+</body>
+
+</html>

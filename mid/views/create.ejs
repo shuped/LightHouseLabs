@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Schooodle Create</title>
+  <% include partials/_head.ejs %>
+  <script type="text/javascript" src="/scripts/setCookieCreate.js"></script>
+</head>
+
+<body>
+  <% include partials/_nav_bar.ejs %> 
+  <main class="">
+    <div class="row col-12">
+      <div class="col-1"></div>
+      <div class="aLittleBitDown andWeWantedBlue weWantItRounded col-10">
+        <h1>Describe the event</h1>
+        <label for="event_input">Event name</label>
+        <input class="form-control form-control-m" type="text" id="event_input" name="event_name" value="<%= event_name %>"><br>
+        <label for="location_input">Location</label><br>
+        <input class="form-control form-control-m" type="text" id="location_input" name="event_location"><br>
+        <label for="note_input">Note</label><br>
+        <input class="form-control form-control-m" type="text" id="note_input" name="event_note"><br>
+        <div class="btnShouldBeCenterAndALittleBitUp">
+          <input id="submit" class="btn btn-primary" type="submit" value="Continue">
+        </div>
+      </div>a
+      <div class="col-1"></div>
+    </div>
+  </main>
+</body>
+
+</html>

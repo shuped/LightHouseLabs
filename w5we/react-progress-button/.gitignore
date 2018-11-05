@@ -1,0 +1,9 @@
+pids
+logs
+npm-debug.log
+node_modules
+example/lib
+example/app.bundle.js
+example/app.promise.bundle.js
+/lib
+coverage

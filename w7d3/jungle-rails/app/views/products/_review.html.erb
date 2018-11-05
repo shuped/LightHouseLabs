@@ -1,0 +1,16 @@
+<li class="review-list__item">
+   <header class="review-list__item__header">
+     <span class="review-list__item--username"> <%= user.name %> </span>
+     <span class="review-list__item--rating"> Rating: <%= review.rating %>/5 </span>
+   </header>
+   <div class="review-list__item--body">
+     <span class="review-list__item--description"> <%= review.description %> </span>
+   </div>
+   <div class="review-list__item--footer">
+     <span class="review-list__item--created-at"> Created At: <%= review.created_at %> </span>
+   </div>
+
+   <% if review.user_id == user.id.to_s %>
+      <%= link_to fa_icon('trash'), [@product, @review], class: 'btn btn-sm btn-danger', method: :delete, data: { confirm: "Are you sure?" } %>
+   <% end %>
+ </li> 
