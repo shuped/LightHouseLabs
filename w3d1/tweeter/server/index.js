@@ -15,7 +15,7 @@ app.use(express.static('public'));
 MongoClient.connect(MONGO_URI, (err, db) => {
   if (err) {
     console.log(`Failed to connect: ${MONGO_URI}`);
-    throw err;
+    return;
   }
   // Because it exports a function that expects the `db` as a parameter, we can
   // require it and pass the `db` parameter immediately:
